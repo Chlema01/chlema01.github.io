@@ -27,3 +27,5 @@ header {
 	}
 	#c:hover {background-color: yellow
 	}
+	a: visited {text-decoration: line-through;
+	}
