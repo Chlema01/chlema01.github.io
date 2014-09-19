@@ -16,12 +16,12 @@ header {
          }
          
          body {
-             background-color: light-blue;
+             background-color: blue;
              margin: 0px;
          }
 	a:hover {background-color: green
 	        }
-	a:hover {background-color: red
+	b:hover {background-color: red
 	}
-	a:hover {background-color: yellow
+	c:hover {background-color: yellow
 	}
