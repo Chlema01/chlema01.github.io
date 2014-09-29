@@ -10,6 +10,15 @@ h1 {color: #AAA; border-bottom: 1px solid; margin-bottom: 0;}
   border-left: 1px solid;}
 div#nav {float: left; width: 7em;
   background: #FDD;}
+div#nav ul {margin: 0; padding: 0; width: 7em; background: white; border: 1px solid;}
+div#nav li {position: relative; list-style: none; margin: 0;}
+div#nav li:hover {background: #EBB;}
+div#nav li.submenu {background: url(submenu.gif) 95% 50% no-repeat;}
+div#nav li.submenu:hover {background-color: #EDD;}
+div#nav li a {display: block; padding: 0.25em 0 0.25em 0.5em; text-decoration: none; width: 6.5em;}
+div#nav ul ul {position: absolute; top: 0; left: 7em;}
+div#nav ul.level1 li.submenu:hover ul.level3
+div#nav ul.level2 li.submenu:hover ul.level3
 </style>
 </head>
 <body>
