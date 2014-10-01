@@ -1,38 +1,74 @@
-<html>
-	<head>
-		<Style>
-      h1 {
-         color: Red;
-         font-size: 40pt;
-      }
-      h2 {text-decoration #myDIV {
-    text-decoration-line:line-through;
-}}
-      h2 { 
-           color: Blue;
-           font-size: 28pt; 
-      }
-    </style>
-</head>
-<body>
-      <h1>To Do List</h1>
-      <h2>Academic Activities (high Priority)</h2>
-      <ol>
-      	<li><strike> Computer Science homework</strike></li>
-      	<li><strike>Spanish Homework</strike></li>
-      	<li> Religion Homework</li>
-      	<li><strike> Econ 130 homework</strike> </li>
-     </ol> 	
-      <h2>Non Academic Activities(high priority)</h2>
-      	<ol>
-      	<li><strike>6am Lifting with Wrestling Team</strike></li>
-      	<li><strike>4pm practice with wrestling Team</strike></li>
-      	<li> <strike>Team dinner in the cafeteria</strike></li>
-     </ol>
-      <h2> Non Academic (Low Priority) </h2>
-      	<li> <strike>Watch Netflix series called "Arrow" with my roommate</strike></li>
-      	<li>Frisbee golf on campus</li>
-      	<li> Play Videogames</li>
-      </ol>
-   </body>
-</html>
+ <html>
+     <head>
+         <title>Home</title>
+         <style>
+         header {
+             position: fixed;
+             background-color: lightblue;
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 50px;
+             font-size: 32pt;
+         }
+         nav {
+             margin-top: 50px;
+             margin-bottom: 0px;
+             background-color: red;
+             
+         }
+         nav li {
+            display: inline;
+         }
+         section {
+             float: left;
+             width: 50%;
+             height: 500px;
+             background-color:green;
+             color: white;
+         }
+         aside {
+             float: left;
+             width: 50%;
+             height: 500px;
+             background-color: yellow;
+         }
+         footer {
+             clear: both;
+             background-color: blue;
+         }
+         
+         
+         </style>
+
+     </head>
+     <body>
+         <header>
+             To do List
+         </header>
+         <nav>
+             <ul>
+             <li>I choose a busy life</li>
+         </nav>
+         <section>
+             <p> High Priority: Academic </p>
+              <ul>
+                <li><strike> Computer Science homework</strike></li>
+                <li><strike>Spanish Homework</strike></li>
+                <li> Religion Homework</li>
+                <li><strike> Econ 130 homework</strike> </li>
+         </section>
+         <aside>
+             <p> High Priority: Wrestling</p>
+             <ul>
+                <li><strike>6am Lifting with Wrestling Team</strike></li>
+                <li><strike>4pm practice with wrestling Team</strike></li>
+                <li> <strike>Team dinner in the cafeteria</strike></li>
+                 <li> Study Table in the Library</li>
+             </ul>
+          </aside>
+         <footer>
+             USA
+         </footer>
+     </body>
+ </html>
