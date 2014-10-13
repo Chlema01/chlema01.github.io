@@ -1,0 +1,57 @@
+ <html>
+   <head>
+     <title>Task List</title>
+   </head>
+     <style> 
+         aside { 
+             left-margin: 50px;
+             right-margin: 50px;
+     </style>
+   <body>
+       <main>
+           <ul id= "busylist"></ul>
+           
+       </main>
+       <aside>
+           
+           <input type="text" id="taskBox" onchange="addTask()"value= "Enter Text" />
+           <button onclick="addTask();">Enter Task Here</button>
+           <select id="prority"/>
+           		
+           
+       </aside>
+           
+           
+     
+    
+
+     <script type="text/javascript">
+       addTask = function() 
+               {
+           i = document.querySelector('#taskBox');
+           bl = document.querySelector("#busylist")
+           li = document.createElement("li") 
+           cb=document.createElement("input")
+           cb.type = "checkbox"
+           t= document.createTextNode(i.value)
+           li.appendChild(cb)
+           li.appendChild(t)
+           bl.appendChild(li)
+     }
+        localSave = function() { 
+    res = []
+    var i;
+    allEntries = document.querySelectorAll("li")
+    for (i=0; i< allEntries.length; i++) {
+           if (allEntries[i].className != "done") {
+                res.push(allEntries[i].innerText);
+              }
+      console.log(res) 
+            // store the array in the local storage
+            //alert(JSON.stringify(res))
+            localStorage.setItem("tododatabase", JSON.stringify(res))
+       
+     </script>
+       
+   </body>
+ </html>
