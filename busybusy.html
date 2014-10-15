@@ -39,19 +39,7 @@
            bl.appendChild(li)
      }
         
-        localSave = function() { 
-    res = []
-    var i;
-    allEntries = document.querySelectorAll("li")
-    for (i=0; i< allEntries.length; i++) {
-           if (allEntries[i].className != "done") {
-                res.push(allEntries[i].innerText);
-              }
-      console.log(res) 
-            // store the array in the local storage
-            //alert(JSON.stringify(res))
-            localStorage.setItem("tododatabase", JSON.stringify(res))
-            }
+       
        
      </script>
        
