@@ -51,6 +51,31 @@
  </html>
  
  
+ <section id =high>
+          
+           <ol type=I id= "busylist"></ol>
+           <input type="text" id="taskBox" placeholder= "Enter Text" onchange="addTask()" />
+           <button id="a" onclick="addTask();">Add Task</button>
+       </section>
+
+
+<script type="text/javascript">
+       addTask = function() 
+               {
+           i = document.querySelector('#taskBox');
+           bl = document.querySelector("#busylist")
+           li = document.createElement("li")
+           li.innerHTML = "<input type =checkbox>" + i.value
+           cb=document.createElement("input")
+           cb.type = "checkbox"
+           t= document.createTextNode(i.value)
+           bl.appendChild(li)
+     }
+       
+           
+     </script>
+ 
+ 
  
  
  
@@ -82,3 +107,14 @@ localSave ()
             // store the array in the local storage
             //alert(JSON.stringify(res))
             localStorage.setItem("tododatabase", JSON.stringify(res))
+            
+            
+            
+    restoreList = function() {
+    allEntries = JSON.parse(localStroage.getItem("todoDatabase")
+    for (i = 0; i<alllEntries.length;i++){
+    
+    	add li to our page using 
+    	allEntries[i] as the text of all the tasks 
+    	}
+    	}
